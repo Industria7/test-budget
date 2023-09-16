@@ -52,6 +52,7 @@ class BudgetApiKtTest : ServerTest() {
         RestAssured.given()
             .get("/budget/year/2020/stats?limit=100&offset=0")
             .toResponse<BudgetYearStatsResponse>().let { response ->
+
                 println(response.items)
 
                 Assert.assertEquals(30, response.items[0].amount)
