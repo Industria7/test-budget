@@ -1,4 +1,4 @@
-package mobi.sevenwinds.app.budget
+package mobi.sevenwinds.app.author
 
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
@@ -19,5 +19,4 @@ object AuthorService {
             return@transaction entity.toResponse()
         }
     }
-
 }

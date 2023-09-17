@@ -1,4 +1,4 @@
-package mobi.sevenwinds.app.budget
+package mobi.sevenwinds.app.author
 
 import com.papsign.ktor.openapigen.annotations.type.string.length.MinLength
 import com.papsign.ktor.openapigen.route.info
@@ -12,7 +12,7 @@ import com.papsign.ktor.openapigen.route.route
  */
 fun NormalOpenAPIRoute.author() {
     route("/author") {
-        route("/add").post<Unit, AuthorRecord, AuthorRecord>(info("Добавить запись")) { param, body ->
+        route("/add").post<Unit, AuthorRecord, AuthorRecord>(info("Добавить Автора")) { param, body ->
             respond(AuthorService.addRecord(body))
         }
     }

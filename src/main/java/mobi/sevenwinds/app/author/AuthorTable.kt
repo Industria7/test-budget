@@ -1,4 +1,4 @@
-package mobi.sevenwinds.app.budget
+package mobi.sevenwinds.app.author
 
 import org.jetbrains.exposed.dao.EntityID
 import org.jetbrains.exposed.dao.IntEntity
