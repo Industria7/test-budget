@@ -6,7 +6,7 @@ import com.papsign.ktor.openapigen.route.tag
 import io.ktor.application.*
 import io.ktor.response.*
 import io.ktor.routing.*
-import mobi.sevenwinds.app.budget.author
+import mobi.sevenwinds.app.author.author
 import mobi.sevenwinds.app.budget.budget
 
 fun NormalOpenAPIRoute.swaggerRouting() {
